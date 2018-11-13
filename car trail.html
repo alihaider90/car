@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+@keyframes abc{
+
+    from{
+left: 10px;
+
+    }
+    to{
+
+left: 800px;
+    }
+}
+@keyframes mov{
+
+from{
+transform: rotate(0deg);
+
+}
+to{
+
+transform: rotate(359deg);
+
+
+}
+
+}
+#container{
+position: relative;
+top: -163px;
+animation: abc 7s linear;
+}
+#road{
+    width: 1000px;
+    height: 200px;
+}
+
+#car{
+
+    width: 150px;
+}
+#wheel{
+    width: 20px;
+    position: relative;
+    left: -130px;
+    top: -10px;
+    animation: mov 7s linear;
+}
+
+#wheel1{
+    width: 20px;
+    position: relative;
+    left: -69px;
+    top: -9px;
+    animation: mov 7s linear;
+    
+}
+    </style>
+</head>
+
+<body>
+
+    <img id="road" src="myroad.jpg">
+    <div id="container">
+        <img id="car" src="my-car.png">
+        <img id="wheel" src="wheel.png">
+        <img id="wheel1" src="wheel.png">
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
